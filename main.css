@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(225, 160, 225);
+    
+}
+.style {
+    background: purple(159, 207, 241);
+    height: 600px;
+    width: 600px;
+    border-radius: 50px;
+}
+.img {
+    height: 280px;
+    width: 300px;
+    align-items: center;
+    border-radius: 50%;
+}
+.message {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.information {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    
+}
+h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(73, 73, 69);
+    text-align: center;
+}
+h3{
+    color: yellow;
+}
