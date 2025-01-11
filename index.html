@@ -2,23 +2,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="main.css">
     <title>birthday invitation</title>
 </head>
 <body>
+    <h2>HAPPY BIRTHDAY YASS! </h2>
+    <nav  class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about the party">About the party</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     <div class="style"> 
         
-         
-         <h1>Join us as we celebrate YOSRA's birthday!</h1>
-         
-         
+        <section id="home">
+         <h1>Join us for fantastic celebration on 17/10 at 7p.m .</h1>
+        </section>
+         <section id="about the party"  class="party">
         <div class="information">
-         <h3 >It's on 17th of <strong>October</strong></h3>
-         <h4>It will be starting at 7pm and finish to 12pm and the location is (rb8 0nm).</h4>
-         <h3 >it would not be the same without you! please RSVP by 16/10 to 01234567891. </h3>
+         <h3 >We're celebrating yosra's 18 Birthday! It's going to be a day full of fun, games, and unforgettable memories. We can't wait to celebrate this special day with you!</h3>
+         <h4> Come party at Bolon garden, located at 1 Green RD,Purple. We'll be celebrating in style!</h4>
+         <h3 >The countdown is on! Only 20 days until the big day!</h3>
          <h5>Lt's make it a day to remember :)</h5>
-         <img class="img" src="https://th.bing.com/th/id/OIP.xpmaxXGVBo2NU0rl7eyWqgHaFj?w=256&h=192&c=7&r=0&o=5&dpr=2&pid=1.7" alt="birthday card">
+        
+         <img class="img" src="https://th.bing.com/th/id/OIP.Yr7dTgt2U7eTIRDYIdnwIwHaHa?w=151&h=190&c=7&r=0&o=5&dpr=2&pid=1.7" alt="birthday card">
         </div>  
+    </section>
+    <section id="rsvp">
+        <DIV>
+            <h1>Let us know if you’ll be joining us to make sure we have enough cake and drinks for everyone!</h1>
+            <h3>Will you be attending?</h3>
+            <button class="yes-btn" onclick="giveFeedback('yes')">Yes,I am coming!</button>
+            <button class="no-btn" onclick="giveFeedback('no')">No,I can not.</button>
+            <div id="feedbackMessage" class="message"></div>
+            <h1>Take a look at some fun memories from past birthdays and get excited for the big day!</h1>
+        </DIV>
+    </section>
+    <section id="contact">
+        <div>
+            <h1>
+                Got questions about the party? Reach out to us!  
+            </h1>
+            <h3>
+                Event Email: email@example.com
+
+                Event Phone Number:   02134567891
+
+
+            </h3>
+        </div>
+    </section>
     </div>
+    <script>
+         function giveFeedback(answer) {
+            var message = document.getElementById('feedbackMessage');
+            
+            if (answer === 'yes') {
+                message.innerHTML = "owwwww we ganna have fun!";
+            } else if (answer === 'no') {
+                message.innerHTML = "if you can not come it is ok! we will make it to next year:)";
+            }
+        }
+    </script>
 </body>
 </html>
